@@ -7,6 +7,18 @@ body{
     background-color: #000;
     color: #fff;
 }
+/* @media(max-width: 500px){
+    html{
+        width: 50%;
+    }
+    body{
+    background-color: #000;       
+    }
+    .nav-list ul li{
+        display: block;      
+    }
+    
+} */
 nav{
     display: flex;
     justify-content: space-around;
@@ -15,6 +27,12 @@ nav img{
     width: 90px;
     height: 40px;
     margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3 s ease-out;
+}
+nav img:hover{
+    color: red;
+    transform: scale(1.1);
 }
 .nav-list ul li{
     list-style: none;
@@ -24,7 +42,7 @@ nav img{
     display: inline-flex;
 }
 ul li:hover{
-    color: #ff4500;
+    color: red;
     cursor: pointer;
 }
 .hero{
@@ -55,7 +73,7 @@ span{
     margin-top: 20px;
     width: 90px;
     height: 30px;
-    background-color: orangered;
+    background-color: red;
     color: #fff;
     border: none;
     outline: none;
@@ -63,7 +81,7 @@ span{
 }
 .btn:hover{
     background: #fff;
-    color: orangered;
+    color: red;
     cursor: pointer;
 }
 #orange-box{
@@ -101,22 +119,30 @@ span{
     margin: -600px 10px;
     display:inline-flexbox;
     width: 300px;
-    height: 200px;
-    background: #3b3a3a;
+    height: 250px;
+    background: hsl(0, 1%, 23%);
     padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.box-logo{
+    width: 60px;
+    /* margin-bottom: 10px; */
 }
 .box:hover{
-    /* background:  #ff4500; */
-    cursor: pointer;
-    border: 3px solid gray;
-    transform: scaley(1.2);
+    transform: scale(1.07);
+    box-shadow: 5px 5px 20px 10px rgba(164, 163, 163, 0.2);
 }
 .active{
-    background-color: #ff4500;
+    background-color: red;
     pointer: cursor;
 }
+.box-active-logo{
+    width: 40px;
+}
 .active:hover{
-    background: #3b3a3a;;
+    background: #3b3a3a;
 }
 .box p{
     margin-bottom: 40px;
@@ -126,11 +152,13 @@ span{
 }
 .boxx:hover{
     cursor: pointer;
-    background: #ff4500;
     color: #fff;
+    transform: scaley(1.2);
+    box-shadow: 5px 5px 20px 10px rgba(164, 163, 163, 0.2);
+
 }
 span:hover{
-    color: #fff;
+    /* color: #fff; */
 }
 .rowww{
     margin-top: -300px;
@@ -187,6 +215,10 @@ span:hover{
 .proj2{
     margin-top: 10px;
 }
+.div img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 /* -------------WORK---- */
 .work{
     background-color: #3b3a3a;
@@ -223,7 +255,9 @@ text-align: center;
 .bottom-logo{
     display: flex;
     justify-content: space-around;
-    height: 60px;
+    /* height: 60px; */
+    background: #3b3a3a;
+
 
 }
 .logo img{
@@ -234,14 +268,12 @@ text-align: center;
 .right{
     margin-top: 20px;
 }
-.right img{
+.right svg{
     margin: 10px 20px;
-}
-.right img:hover{
-    transform: scale(1.5);
+    transition: 0.5s ease-out;
     cursor: pointer;
+
 }
-.div img:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+.right svg:hover{
+    transform: scale(1.3);
 }
