@@ -53,10 +53,8 @@ ul li:hover{
     /* margin-left: 200px; */
 }
 .text{
-
-    min-width: 50%;
-    /* height: 250px; */
-    padding-top: 120px;
+    /* width: 100vw; */
+    padding: 70px;
 }
 span{
     color: orangered;
@@ -122,10 +120,16 @@ span{
     position: relative;
 }
 .row2{
+    width: 82vw;
+    /* margin-left: 608px; */
+    text-align: center;
     display: flex;
+    justify-content: end;
+    /* align-items: center; */
+
 }
 .boxx{
-    min-width: 17rem;
+    min-width: 15rem;
     margin: .75rem;
     padding: 1rem 3rem;
     background-color: #3b3a3a;
@@ -133,7 +137,7 @@ span{
 .experience{
     width: 20%;
     position: absolute;
-    margin: -12% 19%;
+    margin: -14% 19%;
 
 }
 .experience h1{
@@ -167,14 +171,6 @@ span{
 span:hover{
     color: #fff;
 }
-
-.row2{
-    /* margin: 2rem; */
-    margin-left: 608px;
-    text-align: center;
-}
-
-
 /* --------projects---------- */
 .projects{
     margin-top: 130px;
@@ -197,21 +193,22 @@ span:hover{
 .card{
     margin: 3rem;
     align-items: center;
-
-    width: 450px;
-    padding: 20px;
+    border-radius: 1.5rem;
+    width: 400px;
+    padding: 1rem;
     background-color:#3b3a3a;
 
 }
 .card img{
+    border-radius: 1.5rem;
     width: 100%;
-    margin: 10px 0px;
+    padding: 1rem;
 }
 .project-author{
     /* border: 3px solid red; */
     padding: 0 3rem;
 }
-.div img:hover{
+.card img:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -224,7 +221,7 @@ span:hover{
 
 }
 .work{
-    width: 72%;
+    width: 78%;
     display: flex;
     justify-content: space-between;
     background-color: #3b3a3a;
@@ -280,13 +277,11 @@ text-align: center;
         /* border: 3px solid rgb(0, 255, 13); */
         flex-direction: column;
     }
+    .image img{
+        margin-top: -3rem;
+    }
     .text{
-        margin-left: 0;
-        margin-top: -4rem;
-        /* position: absolute; */
-        width: 80vw
-        
-
+        margin-top: -3rem;
     }
     .bg-box{
         opacity: 0;
@@ -300,6 +295,8 @@ text-align: center;
     }
     .box{
         width: 70vw;
+        height: 16rem;
+        margin: 1rem;
     }
     .row-wrapper{
         position: relative;
@@ -311,9 +308,10 @@ text-align: center;
         /* position: relative; */
     }
     .row2{
+        width: 100vw;
         padding: 0 2rem;
         display: block;
-        margin-left: -1rem;
+        /* margin-left: -1rem; */
     }
     .boxx{
         margin: 2rem;
@@ -321,12 +319,13 @@ text-align: center;
     }
     .experience{
         position: absolute;
-        margin-top: -33rem;
+        margin-top: -28rem;
         width: 60%;
         text-align: center;
     }
     .experience h1{
-        font-size: 4rem;
+        font-size: 5rem;
+        margin-top: -5rem;
     }
     .projects{
         flex-direction: column;
@@ -337,7 +336,10 @@ text-align: center;
         flex-direction: column;
     }
     .work{
-        width: 83%;
+        width: 85%;
+    }
+    .work .btn{
+        margin-top: 5rem;
     }
     .footer{
         margin: 0;
