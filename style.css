@@ -46,15 +46,13 @@ ul li:hover{
 .hero{
     display: flex;
     justify-content: space-between;
-    padding: 0 15rem;
+    padding: 0 13rem;
 }
 .image img{
     max-width: 400px;
-    /* margin-left: 200px; */
 }
 .text{
-    /* width: 100vw; */
-    padding: 70px;
+    padding: 5rem 0rem;
 }
 span{
     color: orangered;
@@ -110,6 +108,7 @@ span{
     padding: 2rem;
     cursor: pointer;
     transition: 0.3s ease-out;
+    /* max-width: 90%; */
 }
 .box-logo{
     width: 4rem;
@@ -281,6 +280,8 @@ text-align: center;
         margin-top: -3rem;
     }
     .text{
+        width: 100vw;
+        text-align: center;        
         margin-top: -3rem;
     }
     .bg-box{
